@@ -34,5 +34,8 @@ with the multiplier, then redistribute the values up the tens, hundreds,
 etc. etc.  This solution is not particularly fast or space-efficient,
 but it has the virtue of being comprehensible by any ten-year-old.
 
-
+As usual, I've provided a test suite, as well as a pair of utility
+functions for converting the list to a string, or an unsigned long.  The
+latter only works with very small results.  The executable, "cheapgmp",
+works as specified in the problem statement.
 
