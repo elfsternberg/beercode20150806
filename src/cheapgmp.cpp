@@ -13,7 +13,7 @@ namespace cheapgmp {
     void multiply(gmrep &multiplicand, ulong multiplier) {
       gmrep res(new lmrep());
       ulong rem = 0;
-      for_each(multiplicand->rbegin(), multiplicand->rend(), [&rem, by](ulong &i) { 
+      for_each(multiplicand->rbegin(), multiplicand->rend(), [&rem, multiplier](ulong &i) { 
           ulong t = (i * multiplier) + rem ; 
           i = t % 10 ; 
           rem = t / 10; 
@@ -23,7 +23,7 @@ namespace cheapgmp {
          the new result is complete */
       
       while(rem > 0) {
-        in->push_front(rem % 10);
+        multiplicand->push_front(rem % 10);
         rem = rem / 10;
       }
     }
