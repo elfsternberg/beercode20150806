@@ -11,7 +11,6 @@ namespace cheapgmp {
        as a carryover to the 10^(n+1) slot */
 
     void multiply(gmrep &multiplicand, ulong multiplier) {
-      gmrep res(new lmrep());
       ulong rem = 0;
       for_each(multiplicand->rbegin(), multiplicand->rend(), [&rem, multiplier](ulong &i) { 
           ulong t = (i * multiplier) + rem ; 
@@ -56,7 +55,7 @@ namespace cheapgmp {
       return makerep(base == 0 ? 0 : 1);
     }
 
-    gmrep res = makerep(base);
+    auto res = makerep(base);
     ulong ct = power;
     while(ct > 1) {
       multiply(res, base);

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "cheapgmp.hpp"
+#include "accessories.hpp"
 
 using namespace cheapgmp;
 using namespace std;
