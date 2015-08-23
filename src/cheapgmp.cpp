@@ -1,8 +1,9 @@
 #include "cheapgmp.hpp"
 
-using namespace std;
-
 namespace cheapgmp {
+
+  using namespace std;
+
   namespace {
 
     /* Given a list representing a decimal number as a multiplicand,

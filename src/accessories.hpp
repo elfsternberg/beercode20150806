@@ -3,9 +3,7 @@
 #include <string>
 #include <iostream>
 
-using namespace std;
-
 namespace cheapgmp {
-        wstring tostring(gmrep);
-        ulong tolong(gmrep);
+  std::wstring tostring(gmrep);
+  ulong tolong(gmrep);
 }
