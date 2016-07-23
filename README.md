@@ -9,6 +9,8 @@ far on my own with a solution written in Scheme.
 
 This code is **complete**.  It is not being maintained.
 
+# Description
+
 The problem stated was:
 
     Given a number (assume base 10) less than 10,000, write a program in
