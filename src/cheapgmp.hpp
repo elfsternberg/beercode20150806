@@ -1,3 +1,4 @@
+#include "compat.hpp"
 #include <memory>
 #include <list>
 #include <algorithm>

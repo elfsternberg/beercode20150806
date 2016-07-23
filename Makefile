@@ -5,7 +5,9 @@ CMDSRC= src/cmd.cpp
 TESTSOURCES= tests/test_cheapgmp.cpp
 LDFLAGS=
 TESTLDFLAGS= -laeryn_tests -laeryn_core
-CFLAGS= -c -Wall -std=c++11
+
+# Enable __USE_MISC if you're using clang
+CFLAGS= -c -Wall -std=c++11 # -D__USE_MISC
 CPLUSPLUS= g++
 BINARY=cheapgmp
 CMD=gmpcmd
