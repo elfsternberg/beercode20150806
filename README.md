@@ -5,6 +5,10 @@ it to the August 7th, 2015 Beer && Coding, in the hopes that we would
 help him solve it.  We were not successful, although I did get pretty
 far on my own with a solution written in Scheme.
 
+# Status
+
+This code is **complete**.  It is not being maintained.
+
 The problem stated was:
 
     Given a number (assume base 10) less than 10,000, write a program in
